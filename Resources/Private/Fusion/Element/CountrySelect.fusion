@@ -1,0 +1,7 @@
+prototype(NeosRulez.Form.CountrySelect:CountrySelect.Definition) < prototype(Neos.Form.Builder:FormElement.Definition) {
+    formElementType = 'NeosRulez.Form:CountrySelect'
+    properties {
+        countries = NeosRulez.CountryDataSource:Class.Countries
+        selectedCountries = ${null}
+    }
+}

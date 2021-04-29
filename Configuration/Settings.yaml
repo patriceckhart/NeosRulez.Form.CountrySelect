@@ -1,0 +1,34 @@
+Neos:
+  Flow:
+    error:
+      debugger:
+        recursionLimit: 20
+  Neos:
+    fusion:
+      autoInclude:
+        NeosRulez.Form.CountrySelect: true
+    userInterface:
+      translation:
+        autoInclude:
+          NeosRulez.Form.CountrySelect:
+            - 'NodeTypes/*'
+  Form:
+    presets:
+      default:
+        formElementTypes:
+          'NeosRulez.Form:CountrySelect':
+            renderingOptions:
+              templatePathPattern: 'resource://NeosRulez.Form.CountrySelect/Private/Templates/Form/{@type}.html'
+            superTypes:
+              'Neos.Form:FormElement': true
+            properties:
+              elementClassAttribute: form-control
+      bootstrap:
+        formElementTypes:
+          'NeosRulez.Form:CountrySelect':
+            renderingOptions:
+              templatePathPattern: 'resource://NeosRulez.Form.CountrySelect/Private/Templates/Form/{@type}.html'
+            superTypes:
+              'Neos.Form:FormElement': true
+            properties:
+              elementClassAttribute: form-control
