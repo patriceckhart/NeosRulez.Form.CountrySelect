@@ -1,8 +1,4 @@
 Neos:
-  Flow:
-    error:
-      debugger:
-        recursionLimit: 20
   Neos:
     fusion:
       autoInclude:
