@@ -5,6 +5,9 @@
             <trans-unit id="properties.selectedCountries" xml:space="preserve">
 				<source>Länder auswählen</source>
 			</trans-unit>
+            <trans-unit id="properties.defaultCountry" xml:space="preserve">
+				<source>Standardwert ausgewählt</source>
+			</trans-unit>
         </body>
     </file>
 </xliff>

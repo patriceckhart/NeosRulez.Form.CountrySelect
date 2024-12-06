@@ -3,5 +3,6 @@ prototype(NeosRulez.Form.CountrySelect:CountrySelect.Definition) < prototype(Neo
     properties {
         countries = NeosRulez.CountryDataSource:Class.Countries
         selectedCountries = ${null}
+        defaultCountry = ${null}
     }
 }

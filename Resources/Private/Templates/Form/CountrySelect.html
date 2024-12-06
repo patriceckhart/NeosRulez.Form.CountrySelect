@@ -4,10 +4,10 @@
 <f:section name="field">
     <f:if condition="{element.properties.selectedCountries}">
         <f:then>
-            <f:form.select property="{element.identifier}" id="{element.uniqueIdentifier}" options="{element.properties.selectedCountries -> country:country(countries: element.properties.selectedCountries)}" optionLabelField="name.common" optionValueField="cca2" class="{element.properties.elementClassAttribute}" errorClass="{element.properties.elementErrorClassAttribute}" />
+            <f:form.select property="{element.identifier}" id="{element.uniqueIdentifier}" options="{element.properties.selectedCountries -> country:country(countries: element.properties.selectedCountries)}" optionLabelField="name.common" optionValueField="cca2" class="{element.properties.elementClassAttribute}" errorClass="{element.properties.elementErrorClassAttribute}" value="{element.properties.defaultCountry}" />
         </f:then>
         <f:else>
-            <f:form.select property="{element.identifier}" id="{element.uniqueIdentifier}" options="{element.properties.countries}" optionLabelField="name.common" optionValueField="cca2" class="{element.properties.elementClassAttribute}" errorClass="{element.properties.elementErrorClassAttribute}" />
+            <f:form.select property="{element.identifier}" id="{element.uniqueIdentifier}" options="{element.properties.countries}" optionLabelField="name.common" optionValueField="cca2" class="{element.properties.elementClassAttribute}" errorClass="{element.properties.elementErrorClassAttribute}" value="{element.properties.defaultCountry}" />
         </f:else>
     </f:if>
 </f:section>
